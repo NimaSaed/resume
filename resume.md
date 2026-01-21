@@ -24,10 +24,16 @@ As a trainer and mentor, I am passionate about empowering teams to adopt secure 
 
 **Security Architect**
 
-- Designed and implemented secure architecture for a new SaaS product
-- Specialized in authentication and authorization, secure software development, and secure CI/CD environments
+- Led security architecture for a greenfield multi-tenant SaaS platform on AWS
+- Architected a compliant, tamper-evident audit log pipeline for multi-tenant SaaS on AWS Fargate, supporting SOC 2/ISO 27001 requirements with cryptographic integrity verification and immutable storage
+- Designed an OCSF-aligned audit event schema and Spring Boot SDK with AOP-based annotations, enabling unified security operations across application and infrastructure logs
+- Built a centralized fine-grained authorization (FGA) engine using OpenFGA, supporting RBAC, ABAC, and ReBAC models with policy-as-code deployment through CI/CD pipelines
+- Designed multi-tenant authorization architecture with strict tenant isolation, enabling per-tenant customizable roles and permissions while ensuring secure data separation across organizational boundaries
+- Integrated process-driven access control with the rule engine, automatically aligning permissions with business process stages to reduce manual role management and minimize over-permissioning risks
+- Architected a Spring Cloud Gateway-based API gateway for secure external partner integrations, featuring fine-grained endpoint exposure control, structured usage tracking, and a self-service configuration model enabling teams to manage their API exposure through PRs
+- Established threat modeling as a core security practice by developing training for developer onboarding and conducting design-phase threat modeling to identify vulnerabilities before implementation
 
-**Key Achievement:** Developed a modern authorization engine to enhance data security for a SaaS product
+**Key Achievement:** Designed and built an OpenFGA-based authorization engine enabling fine-grained, per-tenant access control across the platform
 
 ## Xebia (Nov 2021 – April 2024)
 
