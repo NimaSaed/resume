@@ -71,6 +71,14 @@ nix run .#html
 nix develop
 ```
 
+### Run Without Cloning
+
+Don't want to clone the repo? Run directly from GitHub:
+
+```bash
+nix run github:nimasaed/resume -- /path/to/your-resume.md
+```
+
 ### Customize
 
 1. Edit `resume.md` - it's just Markdown
