@@ -24,18 +24,18 @@ Get started quickly with these professionally-styled templates:
 
 ### Resume Template
 
-[![Resume Template Preview](templates/template-resume-preview.png)](templates/template-resume.pdf)
+[![Resume Template Preview](https://nmsd.xyz/resume/templates/template-resume-preview.png)](https://nmsd.xyz/resume/templates/template-resume.pdf)
 
-[**Download PDF**](templates/template-resume.pdf) · [View Markdown](templates/template-resume.md)
+[**Download PDF**](https:///nmsd.xyz/resume/templates/template-resume.pdf) · [View Markdown](templates/template-resume.md)
 
 </td>
 <td align="center" width="50%">
 
 ### Cover Letter Template
 
-[![Cover Letter Template Preview](templates/template-cover-letter-preview.png)](templates/template-cover-letter.pdf)
+[![Cover Letter Template Preview](https://nmsd.xyz/resume/templates/template-cover-letter-preview.png)](https://nmsd.xyz/resume/templates/template-cover-letter.pdf)
 
-[**Download PDF**](templates/template-cover-letter.pdf) · [View Markdown](templates/template-cover-letter.md)
+[**Download PDF**](https://nmsd.xyz/resume/templates/template-cover-letter.pdf) · [View Markdown](templates/template-cover-letter.md)
 
 </td>
 </tr>
