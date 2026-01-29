@@ -53,11 +53,19 @@
             INPUT="''${1:-resume.md}"
             OUTPUT="''${INPUT%.md}.pdf"
             echo "Building $OUTPUT from $INPUT..."
+
+            VERSION="v$(${pkgs.git}/bin/git rev-list --count HEAD).$(${pkgs.git}/bin/git rev-parse --short HEAD)"
+            VERSION_FILE=$(mktemp)
+            echo '<div class="build-version">'"$VERSION"'</div>' > "$VERSION_FILE"
+
             export FONTCONFIG_FILE=${fontsConf}
             ${pkgs.pandoc}/bin/pandoc "$INPUT" \
               --standalone \
               --css=${self}/resume-style.css \
+              -B "$VERSION_FILE" \
               -o - | ${pkgs.python312Packages.weasyprint}/bin/weasyprint - "$OUTPUT"
+
+            rm -f "$VERSION_FILE"
             echo "Done! Created $OUTPUT"
           '';
 
@@ -66,13 +74,21 @@
             INPUT="''${1:-resume.md}"
             OUTPUT="''${INPUT%.md}.html"
             echo "Building $OUTPUT from $INPUT..."
+
+            VERSION="v$(${pkgs.git}/bin/git rev-list --count HEAD).$(${pkgs.git}/bin/git rev-parse --short HEAD)"
+            VERSION_FILE=$(mktemp)
+            echo '<div class="build-version">'"$VERSION"'</div>' > "$VERSION_FILE"
+
             ${pkgs.pandoc}/bin/pandoc "$INPUT" \
               --standalone \
               --css=${self}/resume-style.css \
               --embed-resources \
               --metadata title="Resume" \
+              -B "$VERSION_FILE" \
               -H <(echo '<link rel="stylesheet" href="https://fonts.bunny.net/css?family=Inter:400,500,600,700">') \
               -o "$OUTPUT"
+
+            rm -f "$VERSION_FILE"
             echo "Done! Created $OUTPUT"
           '';
 
