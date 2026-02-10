@@ -279,7 +279,8 @@ p img:hover {
     }
 
     a {
-        color: var(--text);
+        color: var(--accent);
+        text-decoration: underline;
     }
 
     #technologies h3 + p {
